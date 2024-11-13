@@ -1,0 +1,137 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %}
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+
+
+
+
+
+
+    /* Shadows and borders */
+  
+  
+    /* Typography */
+    h1, h3 {
+      font-family: 'Arial', sans-serif;
+    }
+  
+    p {
+      line-height: 1.6; /* Increase line height for readability */
+    }
+  
+    /* Enhance navigation bar */
+    .navbar {
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,.25);
+    }
+    .col-sm-4{
+      /* color: aqua; */
+    }
+  
+    /* Responsive design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem; /* Smaller font size on smaller screens */
+      }
+    }
+  
+  
+  
+  
+  
+  
+  
+    .jumbotron {
+        background-color: #f4f4f4; /* Change background color */
+        color: #333; /* Change text color */
+    }
+  
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add shadow for depth */
+      transition: 0.3s; /* Smooth transition for hover effect */
+    }
+  
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Larger shadow when hovered */
+    }
+  
+    /* Hover effects */
+    .btn-primary:hover {
+      background-color: #0056b3; /* Darker shade when hovered */
+      border-color: #0056b3;
+    }
+    body {
+      background-image: url("{% static 'images/back_Fake.jpg' %}");
+      color: #626567; /* Dark grey text for better readability */
+      background-color: #f8f9fa; /* Light background to reduce strain */
+      background-position: center; /* Align the image in the center */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-attachment: fixed; /* Optional: set the background fixed with respect to the viewport */
+      /* other properties */
+  }
+  
+  .h3-text-color {
+      color: rgb(218, 218, 235); /* Change to your desired color */
+  }
+  
+  .p-text-color {
+      color: rgb(228, 235, 228); /* Change to your desired color */
+  }
+  
+    /* Add more custom CSS here as needed */
+  </style>
+
+
+</head>
+<body>
+
+<!-- <div class="jumbotron text-center"> -->
+  <h1 style="text-align: center; color: rgb(238, 241, 243);">HERPES OUTBREAK PREDICTION</h1>
+
+
+
+  </div>
+      <div class="col-md-3 offset-4">
+        <a href="{% url 'index' %}">
+          <div class="card">
+            <img class="center" src="{% static 'images/h1.jpeg' %}" alt="Notes image" width="300" height="50">
+            <div class="card-body offset-2">
+              <h5>HERPES   OUTBREAK </h5>
+              Predict LSTM Model
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Understanding Herpes Outbreaks:</h3>
+            <p>Herpes outbreaks are caused by the herpes simplex virus (HSV), which can remain dormant in the body for long periods. Predicting these outbreaks involves recognizing triggers such as stress, illness, or hormonal changes, which can reactivate the virus and lead to symptoms.</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Factors Influencing Predictions:</h3>
+            <p>Several factors can influence the likelihood of a herpes outbreak, including individual immune response, lifestyle choices, and environmental stressors. Monitoring these factors can help in developing effective prediction models to anticipate outbreaks.</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Implications of Prediction Models:</h3>
+            <p>Accurate prediction models can help individuals manage their herpes condition more effectively. By understanding when outbreaks are likely to occur, individuals can take preventive measures, seek early treatment, and reduce transmission risks.</p>
+          </div>
+        </div>
+      </div>
+      
+
+
+</body>
+{% endblock content %}
